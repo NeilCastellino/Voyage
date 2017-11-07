@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Login"
+    >
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:height="50dp"
+        android:textSize="35sp"
+        android:text="@string/register"
+        android:textColor="#000000"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="#f0ed41" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="textPersonName"
+                android:width="200dp"
+                android:height="50dp"
+                android:textSize="25sp"
+                android:hint="@string/name"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <EditText
+                android:id="@+id/ent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:width="200dp"
+                android:height="50dp"
+                android:textSize="25sp"
+                android:hint="@string/email"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <EditText
+                android:id="@+id/ent3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:width="200dp"
+                android:height="50dp"
+                android:textSize="25sp"
+                android:hint="@string/pass"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <EditText
+                android:id="@+id/ent77"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:width="200dp"
+                android:height="50dp"
+                android:textSize="25sp"
+                android:hint="@string/age"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/ent4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:width="200dp"
+                android:height="50dp"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:text="@string/gen"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:width="200dp"
+                    android:height="50dp"
+                    android:textSize="25sp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:width="200dp"
+                    android:height="50dp"
+                    android:textSize="25sp"
+                    />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/ent6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:width="200dp"
+                android:height="50dp"
+                android:textSize="25sp"
+                android:hint="@string/phone"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <EditText
+                android:id="@+id/ent5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:width="200dp"
+                android:height="50dp"
+                android:textSize="25sp"
+                android:hint="@string/add"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/submit"
+                android:layout_marginTop="30dp"
+                android:textSize="25sp"
+                android:background="#fb6824"
+                android:onClick="btnSubmit()" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
